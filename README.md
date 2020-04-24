@@ -10,6 +10,7 @@ Problem solving tools:
 - [SAT solving in Python](examples/sat.ipynb)
 - [ASP solving in Python](examples/asp.ipynb)
 - [CSP solving in Python](examples/csp.ipynb)
+- [ILP solving in Python](examples/ilp.ipynb)
 
 ## Homework assignments
 
