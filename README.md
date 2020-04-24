@@ -2,10 +2,9 @@
 
 Contents:
 1. [Examples](#examples)
-1. [Homework assignments](#homeworks)
+1. [Homework assignments](#homework-assignments)
 
 ## Examples
-<a id="examples"></a>
 
 Problem solving tools:
 - [SAT solving in Python](examples/sat.ipynb)
@@ -13,7 +12,6 @@ Problem solving tools:
 - [CSP solving in Python](examples/csp.ipynb)
 
 ## Homework assignments
-<a id="homeworks"></a>
 
 - [Assignment 1](hw1/assignment.md) (programming)
 - *More coming soon..*
