@@ -1,4 +1,4 @@
-# Exercises, homeworks and examples for Symbolic Systems 1 (June 2020)
+# Exercises, homeworks and examples for Symbolic Systems 1 (UvA, MSc AI, June 2020)
 
 Contents:
 1. [Examples](#examples)
