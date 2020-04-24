@@ -15,5 +15,5 @@ Problem solving tools:
 ## Homework assignments
 <a id="homeworks"></a>
 
-- [Assignment 1](hw1/assignment.md) (programming)
+- [Assignment 1](hw1/assignment.md) (programming; due on **[TBA]**)
 - *More coming soon..*
