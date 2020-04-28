@@ -18,7 +18,7 @@ def main():
     # parser.add_argument("input", help="Input file");
     parser.add_argument("-i", "--input", required=True, help="input file")
     parser.add_argument("-v", "--verbose", help="verbose mode", action="store_true")
-    parser.add_argument("-s", "--solver", choices=["sat", "csp", "asp", "ilp", "prop"], default="sat", help="selects which solver to use (default: sat)");
+    parser.add_argument("-s", "--solver", choices=["sat", "csp", "asp", "ilp", "prop"], default="prop", help="selects which solver to use (default: prop)");
     args = parser.parse_args(map(lambda x: x.lower(),sys.argv[1:]));
 
     input = args.input;

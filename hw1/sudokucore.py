@@ -1,4 +1,10 @@
 ###
+### Propagation function to be used in the recursive sudoku solver
+###
+def propagate(sudoku_possible_values,k):
+    return sudoku_possible_values;
+
+###
 ### Solver that uses SAT encoding
 ###
 def solve_sudoku_SAT(sudoku,k):
@@ -21,9 +27,3 @@ def solve_sudoku_ASP(sudoku,k):
 ###
 def solve_sudoku_ILP(sudoku,k):
     return None;
-
-###
-### Propagation function to be used in the recursive sudoku solver
-###
-def propagate(sudoku_possible_values,k):
-    return sudoku_possible_values;
