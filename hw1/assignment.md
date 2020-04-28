@@ -4,7 +4,7 @@ In this assignment, you will program several algorithms to solve a search proble
 
 The homework assignment consists of several parts (*a–e*).
 
-You will finish a Python program ([sudoku.py](sudoky.py)) by
+You will finish a Python program ([sudoku.py](sudoku.py)) by
 implementing the core algorithms (in [sudokucore.py](sudokucore.py)) for the program.
 
 ## Instructions
