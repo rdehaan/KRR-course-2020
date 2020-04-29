@@ -11,7 +11,7 @@ implementing the core algorithms (in [sudokucore.py](sudokucore.py)) for the pro
 
 1. Read the description of assignments 1.a–1.e (below).
 1. Provide your implementation of the functions `propagate()`, `solve_sudoku_SAT()`, `solve_sudoku_CSP()`, `solve_sudoku_ASP()` and `solve_sudoku_ILP()` in (your version of) the file `sudokucore.py`.
-  - You can test your implementation using `sudoku.py`, that refers to `sudokucore.py`, and using the files in [`inputs`](./inputs).
+(You can test your implementation using `sudoku.py`, that refers to `sudokucore.py`, and using the files in [`inputs`](./inputs).)
 1. Explain clearly what you did, and how your encodings work, in comments in `sudokucore.py`.
 1. Submit your version of the file `sudokucore.py` (with your implementation and comments) via [Canvas](https://canvas.uva.nl/courses/10768).
 
