@@ -129,15 +129,15 @@ solution =
 
 The program `sudoku.py` provides structure for five different algorithms
 to find a solution for a given input:
-1. A recursive search algorithm, that employs some *propagation* at each of the nodes in the search tree.
+- A recursive search algorithm, that employs some *propagation* at each of the nodes in the search tree.
   - Abbreviation: `prop`
-1. A search algorithm that encodes the task of finding a solution for the sudoku input as a *propositional CNF formula*, and that uses a SAT solver to find the solution.
+- A search algorithm that encodes the task of finding a solution for the sudoku input as a *propositional CNF formula*, and that uses a SAT solver to find the solution.
   - Abbreviation: `sat`
-1. A search algorithm that encodes the task of finding a solution for the sudoku input as a *constraint satisfaction problem*, and that uses a CSP solver to find the solution.
+- A search algorithm that encodes the task of finding a solution for the sudoku input as a *constraint satisfaction problem*, and that uses a CSP solver to find the solution.
   - Abbreviation: `csp`
-1. A search algorithm that encodes the task of finding a solution for the sudoku input as an *answer set program*, and that uses an ASP solver to find the solution.
+- A search algorithm that encodes the task of finding a solution for the sudoku input as an *answer set program*, and that uses an ASP solver to find the solution.
   - Abbreviation: `asp`
-1. A search algorithm that encodes the task of finding a solution for the sudoku input as a *integer logic program*, and that uses an ILP solver to find the solution.
+- A search algorithm that encodes the task of finding a solution for the sudoku input as a *integer logic program*, and that uses an ILP solver to find the solution.
   - Abbreviation: `ilp`
 
 ### Calling `sudoku.py`
