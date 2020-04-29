@@ -291,3 +291,15 @@ if a solution exists.
 
 For an example of how to call an ILP solver in Python,
 see [this example](../examples/ilp.ipynb).
+
+---
+
+## Evaluation
+
+To get a passing grade for this homework assignment:
+- You must follow all instructions, and document your code clearly.
+- Your implementation of the solver `prop` must be able to solve sudoku inputs for `k=4` within a matter of seconds (on a typical modern laptop).
+- You must have implemented at least one of the solvers `sat`, `csp`, `asp` and `ilp` and your implementation must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
+
+To get full points for this homework assignment, in addition:
+- Your implementation of all of the solvers `sat`, `csp`, `asp` and `ilp` must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
