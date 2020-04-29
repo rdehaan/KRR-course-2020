@@ -303,3 +303,8 @@ To get a passing grade for this homework assignment:
 
 To get full points for this homework assignment, in addition:
 - Your implementation of all of the solvers `sat`, `csp`, `asp` and `ilp` must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
+
+There are various examples available on the internet that encode the problem of solving Sudoku's into SAT/CSP/ASP/ILP.
+You may use these for inspiration.
+However, if you do so, you must give clear references, and you must clearly indicate what you did differently.
+It is definitely not allowed to submit a solution copied from the internet.
