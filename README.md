@@ -5,10 +5,11 @@ Contents:
 1. [Examples](#examples)
 1. [Homework assignments](#homework-assignments)
 
+---
+
 ## Topics
 
-In the course, we will study the following topics.
-Here is a short overview of the different topics,
+Here is a short overview of the different topics that we will cover in the course,
 together with pointers to reading material.
 
 ### (A) Problem solving & search
@@ -56,7 +57,7 @@ Reading material:
 - Sections 12.1–12.2 of [[Russell, Norvig, 2016]](#aima).
 - Chapter 3 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
 
-#### References:
+### References:
 
 <a name="aima"></a>
 - **[Russell, Norvig, 2016]**: Stuart Russell, and Peter Norvig. [*Artificial Intelligence: A Modern Approach (3rd Ed.)*](http://aima.cs.berkeley.edu/), Prentice Hall, 2016.
@@ -65,16 +66,20 @@ Reading material:
 <a name="assip"></a>
 - **[Gebser, Kaminski, Kaufmann, Schaub, 2012]**: Martin Gebser, Roland Kaminski, Benjamin Kaufmann, and Torsten Schaub. [*Answer Set Solving in Practice*](https://potassco.org/book/), Morgan & Claypool, 2012.
 
+---
+
 ## Examples
 
-How to call solvers for different search problems from Python:
-- [SAT solving in Python](examples/sat.ipynb)
-- [ASP solving in Python](examples/asp.ipynb)
-- [CSP solving in Python](examples/csp.ipynb)
-- [ILP solving in Python](examples/ilp.ipynb)
+Here are some notebooks that illustrate how to use various of the techniques that we cover in the course in Python.
 
-Explanation of answer set programming (using clingo in Python):
-- [Answer set programming](examples/answer-sets.ipynb)
+- How to call solvers for different search problems from Python:
+  - [SAT solving in Python](examples/sat.ipynb)
+  - [ASP solving in Python](examples/asp.ipynb)
+  - [CSP solving in Python](examples/csp.ipynb)
+  - [ILP solving in Python](examples/ilp.ipynb)
+- [A short guide to answer set programming (using clingo and Python)](examples/answer-sets.ipynb)
+
+---
 
 ## Homework assignments
 
