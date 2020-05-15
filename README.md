@@ -70,7 +70,7 @@ Reading material:
 
 ## Examples
 
-Here are some notebooks that illustrate how to use various of the techniques that we cover in the course in Python.
+Here are some Python notebooks that illustrate how to use various of the techniques that we cover in the course.
 
 - How to call solvers for different search problems from Python:
   - [SAT solving in Python](examples/sat.ipynb)
