@@ -1,0 +1,10 @@
+# Initial state
+initial: (At(A, LeftBaseLine) & At(B, RightNet) & Approaching(Ball, RightBaseLine) & Partner(A, B) & Partner(B, A) & Location(LeftNet) & Location(RightNet) & Location(RightBaseLine) & Location(LeftBaseLine))
+# Goals
+goals: (Returned(Ball) & At(A, LeftNet) & At(B, RightNet))
+# Action Hit(actor, Ball, loc)
+action: Hit(actor, Ball, loc); (Approaching(Ball, loc) & At(actor, loc) & Location(loc)) ; Returned(Ball)
+# Action Go(actor, fr, to)
+action: Go(actor, fr, to); (At(actor, fr) & Location(fr) & Location(to)); (At(actor, to) & ~At(actor, fr))
+# T_max
+t_max: 10

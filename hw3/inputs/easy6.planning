@@ -1,0 +1,10 @@
+# Initial state
+initial: (At(Home) & Sells(SM, Milk) & Sells(SM, Banana) & Sells(HW, Drill) & Place(Home) & Place(SM) & Place(HW) & Store(SM) & Store(HW) & Item(Milk) & Item(Banana) & Item(Drill))
+# Goals
+goals: (Have(Milk) & Have(Banana) & Have(Drill) & At(Home))
+# Action Buy(x, store)
+action: Buy(x, store); (At(store) & Sells(store, x) & Store(store) & Item(x)); Have(x); (Store(store) & Item(x))
+# Action Go(x, y)
+action: Go(x, y); (At(x) & Place(x) & Place(y)); (At(y) & ~At(x)); (Place(x) & Place(y))
+# T_max
+t_max: 10

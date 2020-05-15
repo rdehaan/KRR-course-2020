@@ -1,0 +1,10 @@
+# Initial state
+initial: Have(Cake)
+# Goals
+goals: (Have(Cake) & Eaten(Cake))
+# Action Eat(Cake)
+action: Eat(Cake); Have(Cake); (Eaten(Cake) & ~Have(Cake))
+# Action Bake(Cake)
+action: Bake(Cake); ~Have(Cake); Have(Cake)
+# T_max
+t_max: 10

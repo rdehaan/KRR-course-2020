@@ -1,0 +1,12 @@
+# Initial state
+initial: (At(C1, SFO) & At(C2, JFK) & At(P1, SFO) & At(P2, JFK) & Cargo(C1) & Cargo(C2) & Plane(P1) & Plane(P2) & Airport(SFO) & Airport(JFK))
+# Goals
+goals: (At(C1, JFK) & At(C2, SFO))
+# Action Load(c, p, a)
+action: Load(c, p, a); (At(c, a) & At(p, a) & Cargo(c) & Plane(p) & Airport(a)); (Contains(c, p) & ~At(c, a))
+# Action Unload(c, p, a)
+action: Unload(c, p, a); (Contains(c, p) & At(p, a) & Cargo(c) & Plane(p) & Airport(a)); (At(c, a) & ~Contains(c, p))
+# Action Fly(p, f, to)
+action: Fly(p, f, to); (At(p, f) & Plane(p) & Airport(f) & Airport(to)); (At(p, to) & ~At(p, f))
+# T_max
+t_max: 10

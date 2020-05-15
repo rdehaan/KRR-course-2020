@@ -1,0 +1,12 @@
+# Initial state
+initial: (At(Flat, Axle) & At(Spare, Trunk) & Tire(Flat) & Tire(Spare) & Location(Axle) & Location(Trunk))
+# Goals
+goals: (At(Spare, Axle) & At(Flat, Ground))
+# Action Remove(obj, loc)
+action: Remove(obj, loc); (At(obj, loc) & Tire(obj) & Location(loc)); (At(obj, Ground) & ~At(obj, loc))
+# Action PutOn(t, Axle)
+action: PutOn(t, Axle); (At(t, Ground) & ~At(Flat, Axle) & Tire(t)); (At(t, Axle) & ~At(t, Ground))
+# Action LeaveOvernight
+action: LeaveOvernight; True; (~At(Spare, Ground) & ~At(Spare, Axle) & ~At(Spare, Trunk) & ~At(Flat, Ground) & ~At(Flat, Axle) & ~At(Flat, Trunk))
+# T_max
+t_max: 10

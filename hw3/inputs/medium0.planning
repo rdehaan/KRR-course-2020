@@ -1,0 +1,12 @@
+# Initial state
+initial: (At(L1) & Bag(B1) & Empty(B1) & Bag(B2) & Empty(B2) & Location(L1) & Location(L2) & Location(L3) & Location(L4) & Location(L5) & Road(L1, L2) & Road(L3, L2) & Road(L5, L4) & Road(L4, L5) & Road(L2, L1) & Road(L2, L3) & Road(L4, L3) & Road(L4, L2) & Road(L3, L4) & Road(L2, L4) & Warehouse(L1))
+# Goals
+goals: (At(L1) & Supplied(L2) & Supplied(L3) & Supplied(L4) & Supplied(L5))
+# Action Go(fr, to)
+action: Go(fr, to); (At(fr) & Road(fr, to)); (At(to) & ~At(fr))
+# Action Load(b, w)
+action: Load(b, w); (At(w) & Warehouse(w) & Bag(b) & Empty(b)); (Full(b) & ~Empty(b))
+# Action Deliver(b, loc)
+action: Deliver(b, loc); (At(loc) & Bag(b) & Full(b)); (Empty(b) & ~Full(b) & Supplied(loc))
+# T_max
+t_max: 20

@@ -1,0 +1,12 @@
+# Initial state
+initial: True
+# Goals
+goals: (RightShoeOn & LeftShoeOn)
+# Action RightShoe
+action: RightShoe; RightSockOn; RightShoeOn
+# Action RightSock
+action: RightSock; True; RightSockOn
+# Action LeftShoe
+action: LeftShoe; LeftSockOn; LeftShoeOn
+# T_max
+t_max: 5

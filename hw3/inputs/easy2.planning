@@ -1,0 +1,10 @@
+# Initial state
+initial: (On(A, Table) & On(B, Table) & On(C, A) & Clear(B) & Clear(C) & Block(A) & Block(B) & Block(C))
+# Goals
+goals: (On(A, B) & On(B, C))
+# Action Move(b, x, y)
+action: Move(b, x, y); (On(b, x) & Clear(b) & Clear(y) & Block(b) & Block(y)); (On(b, y) & Clear(x) & ~On(b, x) & ~Clear(y))
+# Action MoveToTable(b, x)
+action: MoveToTable(b, x); (On(b, x) & Clear(b) & Block(b) & Block(x)); (On(b, Table) & Clear(x) & ~On(b, x))
+# T_max
+t_max: 10
