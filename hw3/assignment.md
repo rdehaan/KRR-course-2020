@@ -84,29 +84,9 @@ For example, the expression `expr('Move(Book, Room1, Room2)')` specifies an inst
 
 ### An example
 
-Putting this all together, let's consider an example planning problem, together with a plan for this planning problem that achieves the goals.
-
-```python
-planning_problem = PlanningProblem(
-  initial = 'Object(Book) & Object(Glasses) & Location(Room1) & Location(Room2) & At(Book,Room1) & At(Glasses,Room1)',
-  goals = 'At(Book,Room2) & At(Glasses,Room2)',
-  actions = [Action(
-      'Move(x, a, b)',
-      precond='Object(x) & Location(a) & Location(b) & At(x, a) & ~At(x, b)',
-      effect='At(x, b) & ~At(x, a)'
-    )]  
-);
-
-plan = [expr('Move(Book,Room1,Room2)'), expr('Move(Glasses,Room1,Room2)')];
-```
-
-We can use methods of `PlanningProblem` to check that this is indeed a correct plan.
-
-```python
-for action in plan:
-  planning_problem.act(action);
-planning_problem.goal_test()
-```
+Putting this all together, let's consider a [simple example](example.ipynb) 
+where we create a planning problem,
+together with a plan for this planning problem that achieves the goals in the planning problem.
 
 ### Some conditions on planning problems that we assume
 
