@@ -86,7 +86,7 @@ Here are some notebooks that illustrate how to use various of the techniques tha
 - [Assignment 1](hw1/assignment.md) (programming)
 - Assignment 2
   - *Coming..*
-- Assignment 3 (programming)
+- [Assignment 3](hw3/assignment.md) (programming)
   - *Coming..*
 - Assignment 4
   - *Coming..*
