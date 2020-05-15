@@ -44,7 +44,7 @@ Subtopics:
 
 Reading material:
 - Chapter 10 and Section 11.3 of [[Russell, Norvig, 2016]](#aima).
-- Chapter 8 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
+- Chapter 8 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip)—for the homework assignment.
 
 ### (D) Description logics and OWL
 
