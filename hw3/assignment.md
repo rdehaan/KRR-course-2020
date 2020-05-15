@@ -25,7 +25,7 @@ as well as the data structures used to represent planning problems and actions (
 To represent (quantifier-free first-order logic) expressions, we use the class `Expr`.
 Each instance `e` of `Expr` contains an operator (`e.op`)
 and arguments (`e.args`). The operator is a string specifying the name of the predicate (or logical operator),
-and the arguments are a tuple containing the arguments of the predicate (or logical operator). For the arguments of `e` we use (other) instances of the class `Expr`.
+and the arguments are specified by a tuple containing the arguments of the predicate (or logical operator). For the arguments of `e` we use (other) instances of the class `Expr`.
 
 We also use the function `expr()`, which gives us an convenient method to define `Expr` objects from a string. For example, `expr('Predicate(A,B)')` returns an `Expr` object with operator `'Predicate'` and two arguments (expressions with operators `'A'` and `'B'`, respectively, and no arguments).
 
@@ -84,7 +84,7 @@ For example, the expression `expr('Move(Book, Room1, Room2)')` specifies an inst
 
 ### An example
 
-Putting this all together, let's consider a [simple example](example.ipynb) 
+Putting this all together, let's consider a [simple example](example.ipynb)
 where we create a planning problem,
 together with a plan for this planning problem that achieves the goals in the planning problem.
 
