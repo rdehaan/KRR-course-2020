@@ -4,6 +4,7 @@ Contents:
 1. [Topics](#topics)
 1. [Examples](#examples)
 1. [Homework assignments](#homework-assignments)
+1. [Templates](#templates)
 
 ---
 
@@ -89,3 +90,9 @@ Here are some Python notebooks that illustrate how to use various of the techniq
 - [Assignment 3](hw3/assignment.md) (programming)
 - Assignment 4
   - *Coming..*
+
+---
+
+## Templates
+
+Here is a [LaTeX template](templates/homework.tex) that works nicely for submitting your homework solutions (for the non-programming assignments).
