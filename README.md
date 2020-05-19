@@ -85,8 +85,7 @@ Here are some Python notebooks that illustrate how to use various of the techniq
 ## Homework assignments
 
 - [Assignment 1](hw1/assignment.md) (programming)
-- Assignment 2
-  - *Coming..*
+- [Assignment 2](hw2/assignmend.md)
 - [Assignment 3](hw3/assignment.md) (programming)
 - Assignment 4
   - *Coming..*
