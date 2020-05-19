@@ -1,6 +1,6 @@
 # Homework assignment 2
 
-In this set of homework assignments, you will answer some theoretical questions about *answer set programming* and *non-monotonic reasoning*.
+In this set of homework assignments, you will answer some theoretical questions about *answer set programming* and *monotonic and non-monotonic reasoning*.
 
 ## Instructions
 
