@@ -101,7 +101,7 @@ Give an example of a problem that (a) can be encoded effectively as the problem 
 *Remarks:*
 - Explain clearly (i) what the problem is, (ii) how you can encode the problem effectively into answer set programming with disjunction in the head of rules, and (iii) why this cannot be encoded effectively into answer set programming without disjunction in the head of rules.
 - With *effectively* we mean that there is, say, no exponential blow-up in the answer set program and that the encoding does not take exponential time to compute.
-- For this assignment, you may assume that the problem of deciding if a propositional logic formula is satisfiable (i.e., the SAT problem) takes exponential time. Note, however, that the SAT problem can be effectively encoded as an answer set program without disjunction in the heads of rules (as explained in [this example](../examples/encode-sat-in-asp.ipynb)), so the SAT problem itself is not a good answer for this assignment.
+- For this assignment, you may assume that the problem of deciding if a propositional logic formula is satisfiable (i.e., the SAT problem) takes exponential time. Note, however, that the SAT problem can be effectively encoded as an answer set program without disjunction in the heads of rules, so the SAT problem itself is not a good answer for this assignment.
 
 *Hints:*
 - Search the web for an ASP modelling technique called *saturation*.
