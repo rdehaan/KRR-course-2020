@@ -79,6 +79,7 @@ Here are some Python notebooks that illustrate how to use various of the techniq
   - [CSP solving in Python](examples/csp.ipynb)
   - [ILP solving in Python](examples/ilp.ipynb)
 - [A short guide to answer set programming (using clingo and Python)](examples/answer-sets.ipynb)
+- [How to solve 3-coloring using answer set programming](examples/3coloring-asp.ipynb)
 
 ---
 
