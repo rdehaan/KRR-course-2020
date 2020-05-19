@@ -3,8 +3,8 @@ initial: (At(Home) & Sells(SM, Milk) & Sells(SM, Banana) & Sells(HW, Drill) & Pl
 # Goals
 goals: (Have(Milk) & Have(Banana) & Have(Drill) & At(Home))
 # Action Buy(x, store)
-action: Buy(x, store); (At(store) & Sells(store, x) & Store(store) & Item(x)); Have(x); (Store(store) & Item(x))
+action: Buy(x, store); (At(store) & Sells(store, x) & Store(store) & Item(x)); Have(x)
 # Action Go(x, y)
-action: Go(x, y); (At(x) & Place(x) & Place(y)); (At(y) & ~At(x)); (Place(x) & Place(y))
+action: Go(x, y); (At(x) & Place(x) & Place(y)); (At(y) & ~At(x))
 # T_max
 t_max: 10
