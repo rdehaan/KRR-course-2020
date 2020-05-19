@@ -2,6 +2,7 @@
 
 Contents:
 1. [Topics](#topics)
+1. [Schedule](#schedule)
 1. [Examples](#examples)
 1. [Homework assignments](#homework-assignments)
 1. [Templates](#templates)
@@ -66,6 +67,43 @@ Reading material:
 - **[Van Harmelen, Lifschitz, Porter, 2008]**: Frank van Harmelen, Vladimir Lifschitz, and Bruce Porter (Eds.). [*Handbook of Knowledge Representation*](https://dai.fmph.uniba.sk/~sefranek/kri/handbook/)
 <a name="assip"></a>
 - **[Gebser, Kaminski, Kaufmann, Schaub, 2012]**: Martin Gebser, Roland Kaminski, Benjamin Kaufmann, and Torsten Schaub. [*Answer Set Solving in Practice*](https://potassco.org/book/), Morgan & Claypool, 2012.
+
+---
+
+## Schedule
+
+We will use the following schedule for the course.
+See [Canvas](https://canvas.uva.nl/courses/10768) for more details on the individual activities.
+We might add additional online (question answering) sessions to the schedule if necessary.
+
+*Note:* this is a tentative schedule, and might still change.
+
+Week 1:
+- **Tuesday June 2:** Pre-recorded lectures about *problem solving & search* available on Canvas
+- **Wednesday June 3, 14:00–15:00:** Online question answering session
+- **Thursday June 4, 19:00:** Pass/fail quiz on reading material about *problem solving & search* due
+- **Friday June 5:** Pre-recorded lectures about *non-monotonic reasoning and answer set programming* available on Canvas
+
+Week 2:
+- **Monday June 8, 11:00–12:00:** Online question answering session
+- **Tuesday June 9, 19:00:** Pass/fail quiz on reading material about *non-monotonic reasoning and answer set programming* due
+- **Wednesday June 10, 19:00:** [Homework assignment 1](hw1/assignment.md) due
+- **Thursday June 11:** Pre-recorded lectures about *automated planning* available on Canvas
+- **Friday June 12, 11:00–12:00:** Online question answering session
+
+Week 3:
+- **Monday June 15, 19:00:** Pass/fail quiz on reading material about *automated planning* due
+- **Tuesday June 16, 19:00:** [Homework assignment 2](hw2/assignment.md) due
+- **Wednesday June 17:** Pre-recorded lectures about *description logics and OWL* available on Canvas
+- **Thursday June 18, 14:00–15:00:** Online question answering session
+- **Friday June 19, 19:00:** [Homework assignment 3](hw3/assignment.md) due
+
+Week 4:
+- **Monday June 22, 19:00:** Pass/fail quiz on reading material about *description logics and OWL* due
+- **Tuesday June 23, 11:00–12:00:** Online question answering session
+- **Wednesday June 24, 19:00:** Homework assignment 4 due
+- **Thursday June 25, 11:00–12:00:** Online question answering session
+- **Friday June 26, 9:00–11:00:** Final (online) exam
 
 ---
 
