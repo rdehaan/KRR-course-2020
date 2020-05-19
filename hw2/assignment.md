@@ -68,7 +68,7 @@ Then consider the following reasoning task:
 
 *Hints:*
 - Begin with the example of a PDFN default theory `(W,D)` that is mentioned above. Figure out what its extensions are. Encode this PDFN default theory into an answer set program `P`, in such a way that the answer sets of `P` are in direct correspondence to the extensions of `(W,D)`. Then generalize your approach to arbitrary PDFN default theories.
-
+- For this assignment, think of answer set programming as a problem solving paradigm (rather than a paradigm for non-monotonic reasoning).
 
 ---
 
