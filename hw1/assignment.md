@@ -5,15 +5,15 @@ In this assignment, you will program several algorithms to solve a search proble
 The homework assignment consists of several parts (*a–e*).
 
 You will finish a Python program ([sudoku.py](sudoku.py)) by
-implementing the core algorithms (in [sudokucore.py](sudokucore.py)) for the program.
+implementing the core algorithms (in [sudoku_core.py](sudoku_core.py)) for the program.
 
 ## Instructions
 
 1. Read the description of assignments 1.a–1.e (below).
-1. Provide your implementation of the functions `propagate()`, `solve_sudoku_SAT()`, `solve_sudoku_CSP()`, `solve_sudoku_ASP()` and `solve_sudoku_ILP()` in (your version of) the file `sudokucore.py`.
-(You can test your implementation using [sudoku.py](sudoku.py), that refers to [sudokucore.py](sudokucore.py), and using the files in [inputs](./inputs).)
-1. Explain clearly what you did, and how your encodings work, in comments in `sudokucore.py`.
-1. Submit your version of the file `sudokucore.py` (with your implementation and comments) via [Canvas](https://canvas.uva.nl/courses/10768).
+1. Provide your implementation of the functions `propagate()`, `solve_sudoku_SAT()`, `solve_sudoku_CSP()`, `solve_sudoku_ASP()` and `solve_sudoku_ILP()` in (your version of) the file `sudoku_core.py`.
+(You can test your implementation using [sudoku.py](sudoku.py), that refers to [sudoku_core.py](sudoku_core.py), and using the files in [inputs](./inputs).)
+1. Explain clearly what you did, and how your encodings work, in comments in `sudoku_core.py`.
+1. Submit your version of the file `sudoku_core.py` (with your implementation and comments) via [Canvas](https://canvas.uva.nl/courses/10768).
 
 ---
 
@@ -221,7 +221,7 @@ or incorrect (if the algorithms are not implemented correctly).
 
 The recursive search algorithm is already implemented in `sudoku.py` (as `solve_sudoku_prop()`). However, no form of propagation is implemented: `solve_sudoku_prop()` just returns its input `sudoku_possible_values`.
 
-Implement some propagation—that is, change `propagate()` in `sudokucore.py` so that it does something intelligent.
+Implement some propagation—that is, change `propagate()` in `sudoku_core.py` so that it does something intelligent.
 
 Make sure that with your implemented `propagate()`, the `prop` algorithm in `sudoku.py` is able to solve `3x3` sudoku inputs efficiently (say, in a matter of seconds). You can use `inputs/hard3.sudoku` to test this.
 
@@ -245,7 +245,7 @@ and that it returns the filtered version of `sudoku_possible_values`.
 ## Assignment 1.b: `solve_sudoku_SAT()`
 
 Implement the `sat` algorithm—that is, change `solve_sudoku_SAT()`
-in `sudokucore.py` so that:
+in `sudoku_core.py` so that:
 - It returns a solution (in list of lists representation) for a sudoku input,
 if a solution exists.
 - It finds solutions by encoding the problem into SAT and calling a SAT solver.
@@ -258,7 +258,7 @@ see [this example](../examples/sat.ipynb).
 ## Assignment 1.c: `solve_sudoku_CSP()`
 
 Implement the `csp` algorithm—that is, change `solve_sudoku_CSP()`
-in `sudokucore.py` so that:
+in `sudoku_core.py` so that:
 - It returns a solution (in list of lists representation) for a sudoku input,
 if a solution exists.
 - It finds solutions by encoding the problem into CSP and calling a CSP solver.
@@ -271,7 +271,7 @@ see [this example](../examples/csp.ipynb).
 ## Assignment 1.d: `solve_sudoku_ASP()`
 
 Implement the `asp` algorithm—that is, change `solve_sudoku_ASP()`
-in `sudokucore.py` so that:
+in `sudoku_core.py` so that:
 - It returns a solution (in list of lists representation) for a sudoku input,
 if a solution exists.
 - It finds solutions by encoding the problem into ASP and calling an ASP solver.
@@ -284,7 +284,7 @@ see [this example](../examples/asp.ipynb).
 ## Assignment 1.e: `solve_sudoku_ILP()`
 
 Implement the `ilp` algorithm—that is, change `solve_sudoku_ILP()`
-in `sudokucore.py` so that:
+in `sudoku_core.py` so that:
 - It returns a solution (in list of lists representation) for a sudoku input,
 if a solution exists.
 - It finds solutions by encoding the problem into ILP and calling an ILP solver.

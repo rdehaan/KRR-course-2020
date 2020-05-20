@@ -5,11 +5,11 @@ import argparse
 import math
 from codetiming import Timer
 
-from sudokucore import solve_sudoku_SAT
-from sudokucore import solve_sudoku_CSP
-from sudokucore import solve_sudoku_ASP
-from sudokucore import solve_sudoku_ILP
-from sudokucore import propagate
+from sudoku_core import solve_sudoku_SAT
+from sudoku_core import solve_sudoku_CSP
+from sudoku_core import solve_sudoku_ASP
+from sudoku_core import solve_sudoku_ILP
+from sudoku_core import propagate
 
 ### Main
 def main():
@@ -96,11 +96,6 @@ def main():
             print("INCORRECT SOLUTION FOUND");
             print(pretty_repr(solved_sudoku,k));
 
-###
-### =============================
-### here was sudokucore.py
-### =============================
-###
 
 ### Check if a solved sudoku is correct
 def check_solved_sudoku(sudoku,k):
