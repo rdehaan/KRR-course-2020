@@ -60,7 +60,9 @@ Subtopics:
 - Integer linear programming
 
 Reading material:
-- Chapters 3, 6 and 7 of [[Russell, Norvig, 2016]](#aima).
+- Sections 3.1–3.4 of [[Russell, Norvig, 2016]](#aima).
+- Sections 6.1–6.3 of [[Russell, Norvig, 2016]](#aima).
+- Sections 7.1–7.6.1 of [[Russell, Norvig, 2016]](#aima).
 
 ### (B) Non-monotonic reasoning and answer set programming
 
