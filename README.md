@@ -99,8 +99,9 @@ Subtopics:
 - Modelling and reasoning with ontologies
 
 Reading material:
+- Sections 8.0–8.2 of [[Russell, Norvig, 2016]](#aima).
 - Sections 12.1–12.2 of [[Russell, Norvig, 2016]](#aima).
-- Chapter 3 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
+- Sections 3.0–3.2 and 3.7 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
 
 ### References:
 
