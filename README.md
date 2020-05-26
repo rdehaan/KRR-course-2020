@@ -101,7 +101,7 @@ Reading material:
 <a name="aima"></a>
 - **[Russell, Norvig, 2016]**: Stuart Russell, and Peter Norvig. [*Artificial Intelligence: A Modern Approach (3rd Ed.)*](http://aima.cs.berkeley.edu/), Prentice Hall, 2016.
 <a name="hokr"></a>
-- **[Van Harmelen, Lifschitz, Porter, 2008]**: Frank van Harmelen, Vladimir Lifschitz, and Bruce Porter (Eds.). [*Handbook of Knowledge Representation*](https://dai.fmph.uniba.sk/~sefranek/kri/handbook/)
+- **[Van Harmelen, Lifschitz, Porter, 2008]**: Frank van Harmelen, Vladimir Lifschitz, and Bruce Porter (Eds.). [*Handbook of Knowledge Representation*](https://dai.fmph.uniba.sk/~sefranek/kri/handbook/), Elsevier, 2008.
 <a name="assip"></a>
 - **[Gebser, Kaminski, Kaufmann, Schaub, 2012]**: Martin Gebser, Roland Kaminski, Benjamin Kaufmann, and Torsten Schaub. [*Answer Set Solving in Practice*](https://potassco.org/book/), Morgan & Claypool, 2012.
 
