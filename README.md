@@ -87,7 +87,8 @@ Subtopics:
 - Extensions of classical planning
 
 Reading material:
-- Chapter 10 and Section 11.3 of [[Russell, Norvig, 2016]](#aima).
+- Sections 10.0–10.2 and 10.4 of [[Russell, Norvig, 2016]](#aima).
+- Section 11.3 of [[Russell, Norvig, 2016]](#aima).
 - Chapter 8 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip)—for the homework assignment.
 
 ### (D) Description logics and OWL
