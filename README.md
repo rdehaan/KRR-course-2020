@@ -73,8 +73,10 @@ Subtopics:
 - Problem solving using ASP
 
 Reading material:
-- Sections 6.0–6.2 and Chapter 7 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
-- Chapters 2 and 3 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
+- Sections 6.0–6.2 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
+- Sections 7.1–7.3.1 and 7.3.4–7.4 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
+- Sections 2.0–2.3 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
+- Chapter 3 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
 
 ### (C) Automated planning
 
