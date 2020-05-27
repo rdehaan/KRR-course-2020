@@ -63,6 +63,7 @@ Reading material:
 - Sections 3.1–3.4 of [[Russell, Norvig, 2016]](#aima).
 - Sections 6.1–6.3 of [[Russell, Norvig, 2016]](#aima).
 - Sections 7.1–7.6.1 of [[Russell, Norvig, 2016]](#aima).
+- Appendix A.1 of [[Russell, Norvig, 2016]](#aima).
 - Sections 2.0–2.2.2 of [[Van Harmelen, Lifschitz, Porter, 2008]](#hokr).
 
 ### (B) Non-monotonic reasoning and answer set programming
