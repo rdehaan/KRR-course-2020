@@ -34,7 +34,7 @@ Week 3:
 - **Monday June 15, 19:00:** Pass/fail quiz on reading material about *automated planning* due
 - **Tuesday June 16, 19:00:** [Homework assignment 2](hw2/assignment.md) due
 - **Wednesday June 17:** Pre-recorded lectures about *description logics and OWL* available on Canvas
-- **Thursday June 18, 14:00–15:00:** Online question answering session
+- **Thursday June 18, 11:00–12:00:** Online question answering session
 - **Friday June 19, 19:00:** [Homework assignment 3](hw3/assignment.md) due
 
 Week 4:
