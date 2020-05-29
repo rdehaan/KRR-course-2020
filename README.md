@@ -126,10 +126,11 @@ Here are some Python notebooks that illustrate how to use various of the techniq
   - [ILP solving in Python](examples/ilp.ipynb)
 - [A very short guide to integer linear programming](examples/guide-to-ilp.ipynb)
 - [A short guide to answer set programming (using clingo and Python)](examples/guide-to-asp.ipynb)
-- [How to solve 3-coloring using SAT solving](examples/3coloring-sat.ipynb)
-- [How to solve 3-coloring using CSP solving](examples/3coloring-csp.ipynb)
-- [How to solve 3-coloring using ILP solving](examples/3coloring-ilp.ipynb)
-- [How to solve 3-coloring using answer set programming](examples/3coloring-asp.ipynb)
+- [How to solve 3-Coloring using SAT solving](examples/3coloring-sat.ipynb)
+- [How to solve 3-Coloring using CSP solving](examples/3coloring-csp.ipynb)
+- [How to solve 3-Coloring using ILP solving](examples/3coloring-ilp.ipynb)
+- [How to solve 3-Coloring using answer set programming](examples/3coloring-asp.ipynb)
+- [How to solve Dominating Set using answer set programming](examples/ds-asp.ipynb)
 
 ---
 
