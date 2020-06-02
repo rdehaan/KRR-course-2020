@@ -316,7 +316,7 @@ def solve_sudoku_prop(sudoku,k):
             return None;
         else:
             # Propagate
-            propagate(sudoku_possible_values,k);
+            sudoku_possible_values = propagate(sudoku_possible_values,k);
             # Check for contradictions
             if contradiction(sudoku_possible_values):
                 return None;
