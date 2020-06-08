@@ -1,6 +1,3 @@
-###
-### Propagation function to be used in the recursive sudoku solver
-###
 def propagate(sudoku_possible_values,k):
     """
     Carry out constraint propagation (as part of a backtracking search algorithm for solving a sudoku input), by removing possible values for some cells based on the remaining possible values for other cells.
@@ -15,9 +12,7 @@ def propagate(sudoku_possible_values,k):
 
     return sudoku_possible_values
 
-###
-### Solver that uses SAT encoding
-###
+
 def solve_sudoku_SAT(sudoku,k):
     """
     Solve a sudoku input by encoding the problem into SAT, calling a SAT solver, and retrieving the solution for the sudoku input from a satisfying truth assignment given by the SAT solver.
@@ -34,9 +29,7 @@ def solve_sudoku_SAT(sudoku,k):
 
     return None
 
-###
-### Solver that uses CSP encoding
-###
+
 def solve_sudoku_CSP(sudoku,k):
     """
     Solve a sudoku input by encoding the problem into CSP, calling a CSP solver, and retrieving the solution for the sudoku input from a solution given by the CSP solver.
@@ -53,9 +46,7 @@ def solve_sudoku_CSP(sudoku,k):
 
     return None
 
-###
-### Solver that uses ASP encoding
-###
+
 def solve_sudoku_ASP(sudoku,k):
     """
     Solve a sudoku input by encoding the problem into ASP, calling an ASP solver, and retrieving the solution for the sudoku input from an answer set given by the ASP solver.
@@ -72,9 +63,7 @@ def solve_sudoku_ASP(sudoku,k):
 
     return None
 
-###
-### Solver that uses ILP encoding
-###
+
 def solve_sudoku_ILP(sudoku,k):
     """
     Solve a sudoku input by encoding the problem into ILP, calling an ILP solver, and retrieving the solution for the sudoku input from a satisfying assignment given by the ILP solver.
