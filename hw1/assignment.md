@@ -298,11 +298,12 @@ see [this example](../examples/ilp.ipynb).
 
 To get a passing grade for this homework assignment:
 - You must follow all instructions, and document your code clearly.
-- Your implementation of the solver `prop` must be able to solve sudoku inputs for `k=4` within a matter of seconds (on a typical modern laptop).
+- Your implementation of the solver `prop` must be able to solve sudoku inputs for `k=3` within a matter of seconds (on a typical modern laptop).
 - You must have implemented at least one of the solvers `sat`, `csp`, `asp` and `ilp` and your implementation must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
 
 To get full points for this homework assignment, in addition:
 - Your implementation of all of the solvers `sat`, `csp`, `asp` and `ilp` must be able to solve sudoku inputs for `k=5` within less than 60 seconds (on a typical modern laptop).
+- Your implementation of the solver `prop` must be able to solve sudoku inputs for `k=4` within less than 60 seconds (on a typical modern laptop).
 
 There are various examples available on the internet that encode the problem of solving Sudoku's into SAT/CSP/ASP/ILP.
 You may use these for inspiration.
