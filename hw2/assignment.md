@@ -25,7 +25,7 @@ To make this concrete, for this exercise you may consider propositional reasonin
 *Remarks:*
 - Note that the formulas in &Phi; and the formula &varphi; may be propositional logic formulas of arbitrarily complex structure, where the satisfiability algorithm that you may use only works for formulas in conjunctive normal form.
 - Describe an algorithm for the task of propositional reasoning in enough detail so that one of your class mates can understand how and why it works, and avoid spelling out unnecessary details. (This can be a tricky balance.)
-- If the working of your algorithm is based on results (e.g., from the reading material for the course), clearly explain which results.
+- If the working of your algorithm is based on theoretical results (e.g., theoretical results from the reading material for the course), clearly explain which results.
 
 ---
 
