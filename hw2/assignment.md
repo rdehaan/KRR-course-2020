@@ -44,7 +44,7 @@ In this exercise, you will explain how to use an algorithm for answer set progra
 
 In this exercise, you will explain how to use an algorithm for answer set programming to perform non-monotonic reasoning in a particular fragment of default logic.
 
-Consider default rules of the following form: `P : C / C`, where both `P` and `C` are conjunctions of propositional literals. (Such default rules are called *propositional disjunction-free normal default rules*.) Moreover, consider a default theory `(W,D)`, where `W` is a set of propositional literals and `D` is a set of disjunction-free normal default rules. We call such a default theory a *PDFN default theory*.
+Consider defaults of the following form: `P : C / C`, where both `P` and `C` are conjunctions of propositional literals. (Such defaults are called *propositional disjunction-free normal defaults*.) Moreover, consider a default theory `(W,D)`, where `W` is a set of propositional literals and `D` is a set of disjunction-free normal defaults. We call such a default theory a *PDFN default theory*.
 
 For example, the following specifies a PDFN default theory `(W,D)` (where logical conjunction is written as `&` and negation as `~`):
 ```
