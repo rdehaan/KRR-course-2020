@@ -54,7 +54,9 @@ class PlanningProblem:
 
     def goal_test(self):
         """Checks if the goals have been reached"""
-        return all(goal in self.initial for goal in self.goals)
+        query = associate('&', self.goals)
+        kb = FolKB(self.initial)
+        return kb.ask(query) is not False
 
     def act(self, action):
         """
