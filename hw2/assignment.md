@@ -89,6 +89,9 @@ n { item(1..u) } m.
 *Hints:*
 - Begin with example values for `n`, `m` and `u`. For example, with `#const n=2.`, `#const m=3.` and `#const u=4.` Then, make sure that your program works also for other values of `n`, `m` and `u`.
 
+*Note:*
+- You may use 'range notation', e.g., as in `item(1..u)`.
+
 ---
 
 ## Assignment 5 (&star;&star;&star;): disjunction is a true extension of ASP
