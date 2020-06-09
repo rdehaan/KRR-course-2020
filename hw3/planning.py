@@ -38,15 +38,6 @@ class PlanningProblem:
         except AttributeError:
             pass
 
-        # new_clauses = []
-        # for clause in clauses:
-        #     if clause.op == '~':
-        #         # new_clauses.append(expr('~' + str(clause.args[0])))
-        #         new_clause = Expr('~' + clause.op, clause.args)
-        #         new_clauses.append(new_clause)
-        #     else:
-        #         new_clauses.append(clause)
-        # return new_clauses
         new_clauses = []
         for clause in clauses:
             new_clauses.append(clause)
