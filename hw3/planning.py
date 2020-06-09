@@ -54,9 +54,8 @@ class PlanningProblem:
 
     def goal_test(self):
         """Checks if the goals have been reached"""
-        query = associate('&', self.goals)
         kb = FolKB(self.initial)
-        return kb.ask(query) is not False
+        return first(fol_bc_and(kb,self.goals,{})) is not False
 
     def act(self, action):
         """
