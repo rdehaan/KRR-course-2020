@@ -152,16 +152,6 @@ class Action:
         return kb
 
 
-def goal_test(goals, state):
-    """Generic goal testing helper function"""
-
-    if isinstance(state, list):
-        kb = FolKB(state)
-    else:
-        kb = state
-    return all(kb.ask(q) is not False for q in goals)
-
-
 ###
 ### EXPRESSIONS
 ###
