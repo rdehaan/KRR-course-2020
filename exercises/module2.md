@@ -200,3 +200,28 @@ contain `allowed_to_do(fraud)` and `should_not_do(speeding)`.
 contain `forbidden(speeding)`, `forbidden(fraud)`,
 `should_not_do(speeding)` and `should_not_do(fraud)` and do not
 contain `allowed_to_do(fraud)` and `allowed_to_do(speeding)`.
+
+---
+
+## Exercise 2.4
+
+### Exercise 2.4.a
+
+Show that the default theory *(W,D)* with *W = &emptyset;*
+and *D = { `T : p / ~q`, `T : q / ~r`, `T : r / ~s` }*
+(where `~` denotes negation)
+has exactly one extension.
+
+### Exercise 2.4.b
+
+What extensions does the default theory *(W,D)* with *W = { `p -> (~q & ~r)` }*
+and *D = { `T : p / p`, `T : q / q`, `T : r / r` }*
+(where `~` denotes negation, `&` denotes conjunction, and `->`
+denotes logical implication) have?
+
+### Exercise 2.4.c
+
+Show that the default theory *(W,D)* with *W = { `p` }*
+and *D = { `p : r / q`, `p : s / ~q` }*
+(where `~` denotes negation)
+has no extensions.
