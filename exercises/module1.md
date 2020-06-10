@@ -117,3 +117,24 @@ that takes as input a 2CNF formula &varphi;,
 and that produces an answer set program *P* whose optimal answer sets
 correspond exactly to the truth assignments &alpha; that satisfy a maximal
 number of clauses of &varphi;.
+
+---
+
+## Exercise 1.6
+
+### Exercise 1.6.a
+
+Show that the following linear program *P* has a feasible non-integer solution,
+and no feasible integer solution.
+The program contains the variables *x<sub>1</sub>*, *x<sub>2</sub>* and *x<sub>3</sub>*,
+and the following linear inequalities:
+```
+x1 >= 0
+x1 <= 1
+x2 >= 0
+x2 <= 1
+x3 >= 0
+x3 <= 1
+2*x1 + 3*x2 + 5*x3 <= 6
+2*x1 + 3*x2 + 5*x3 >= 6
+```
