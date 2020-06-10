@@ -5,6 +5,7 @@ Contents:
 1. [Topics](#topics)
 1. [Examples](#examples)
 1. [Homework assignments](#homework-assignments)
+1. [Exercise questions](#exercise-questions)
 1. [Templates](#templates)
 
 ---
@@ -140,6 +141,18 @@ Here are some Python notebooks that illustrate how to use various of the techniq
 - [Assignment 2](hw2/assignment.md)
 - [Assignment 3](hw3/assignment.md) (programming)
 - Assignment 4
+  - *Coming..*
+
+---
+
+## Exercise questions
+
+- [Exercise questions related to *problem solving and search*](exercises/module1.md)
+- Exercise questions related to *non-monotonic reasoning and answer set programming*
+  - *Coming..*
+- Exercise questions related to *automated planning*
+  - *Coming..*
+- Exercise questions related to *description logics and OWL*
   - *Coming..*
 
 ---
