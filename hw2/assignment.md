@@ -114,3 +114,10 @@ Give an example of a problem that (a) can be encoded effectively as the problem 
 ## Evaluation
 
 Each of the assignments (1–5) is worth 2 points, yielding a total of 10 points.
+
+For answering these questions, aim at producing 3 pages at most
+(using [this template](../templates/homework.tex))&mdash;for all five questions combined.
+It is doable to provide correct and detailed enough answers within this space bound,
+and this space bound should give you some idea of how lengthy/detailed
+your answers should be.
+It is also definitely doable to do it in less than 3 pages.
