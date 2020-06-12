@@ -9,8 +9,15 @@ from codetiming import Timer
 
 from asp_planner_core import solve_planning_problem_using_ASP
 
-### Main
+
 def main():
+    """
+    Reads arguments from command line (including an input file),
+    reads planning problem and upper bound on length (t_max) from the specified input file,
+    calls solve_planning_problem_using_ASP() from asp_planner_core.py to find a plan for
+    the planning problem (if it exists), and prints the found plan.
+    """
+
     # Take command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input", required=True, help="input file")
@@ -58,8 +65,18 @@ def main():
             print(pretty_repr_plan(plan))
 
 
-### Read planning problem from file
 def read_problem_from_file(filename):
+    """
+    Reads a planning problem (together with an upper bound t_max on the length
+    of plans for this problem) from a file.
+
+    Parameters:
+        filename (str): Name of the file that is to be read from.
+
+    Returns:
+        ((PlanningProblem,int)): Pair with the planning problem and the
+        bound t_max that are read from the file.
+    """
 
     # Auxiliary function to parse a string of the form (prefix + "rest")
     # If string is of this form, it returns True,"rest"
@@ -117,8 +134,20 @@ def read_problem_from_file(filename):
         print("Something went wrong while reading from " + filename + " (" + str(e) + ")")
         return None, None
 
-### Verify whether a plan is correct for a planning problem
+
 def verify_plan(planning_problem, plan):
+    """
+    Checks whether the given plan is a correct plan for the given planning problem.
+
+    Parameters:
+        planning_problem (PlanningProblem): The planning problem for which the plan
+        is to be checked.
+        plan (list(Expr)): The plan that is to be checked.
+
+    Returns:
+        (bool): Whether the plan achieves the goals of the planning problem when applied
+        to the initial state in the planning problem.
+    """
 
     # Make a copy of the problem
     copy = copy_planning_problem(planning_problem)
@@ -133,13 +162,31 @@ def verify_plan(planning_problem, plan):
     return copy.goal_test()
 
 
-### String representation of plans
 def pretty_repr_plan(plan):
+    """
+    Represents a plan as a string.
+
+    Parameters:
+        plan (list(Expr)): A plan.
+
+    Returns:
+        (str): A string representing the plan.
+    """
+
     return str(plan)
 
 
-### Make a copy of a planning problem
 def copy_planning_problem(planning_problem):
+    """
+    Make a copy of a planning problem.
+
+    Parameters:
+        planning_problem (PlanningProblem): A planning problem.
+
+    Returns:
+        (PlanningProblem): A copy of the given planning problem.
+    """
+
     copy = PlanningProblem(
         initial=planning_problem.initial,
         goals=planning_problem.goals,
@@ -147,8 +194,16 @@ def copy_planning_problem(planning_problem):
     return copy
 
 
-### Pretty (human-readable) string representation of planning problems
 def pretty_repr_planning_problem(planning_problem):
+    """
+    Represents a planning problem as a (human-readable) string.
+
+    Parameters:
+        plan (PlanningProblem): A planning problem.
+
+    Returns:
+        (str): A string representing the planning problem.
+    """
 
     repr = "--- Planning problem ---\n"
     repr += "Initial: {}\n".format(planning_problem.initial)
@@ -162,8 +217,17 @@ def pretty_repr_planning_problem(planning_problem):
     return repr
 
 
-### Write a planning problem to a file in the same format that is read by read_problem_from_file()
 def write_planning_problem_to_file(planning_problem,t_max,filename):
+    """
+    Writes a planning problem to a file (together with an upper bound t_max on
+    the length of plans for this problem) in the same format that is read by
+    read_problem_from_file().
+
+    Parameters:
+        planning_problem (PlanningProblem): The planning problem.
+        t_max (int): The upper bound on the plan length.
+        filename (str): The name of the file that is to be written.
+    """
 
     output = "# Initial state\n"
     output += "initial: {}\n".format(associate('&', planning_problem.initial))
@@ -196,7 +260,7 @@ def write_planning_problem_to_file(planning_problem,t_max,filename):
 
 ###
 class suppress_stdout_stderr(object):
-    '''
+    """
     A context manager for doing a "deep suppression" of stdout and stderr in
     Python, i.e. will suppress all print, even if the print originates in a
     compiled C/Fortran sub-function.
@@ -205,7 +269,7 @@ class suppress_stdout_stderr(object):
     exited (at least, I think that is why it lets exceptions through).
 
     (From: https://stackoverflow.com/questions/11130156/suppress-stdout-stderr-print-from-python-functions)
-    '''
+    """
     def __init__(self):
         # Open a pair of null files
         self.null_fds =  [os.open(os.devnull,os.O_RDWR) for x in range(2)]
@@ -226,6 +290,5 @@ class suppress_stdout_stderr(object):
         os.close(self.null_fds[1])
 
 
-### Call main()
 if __name__ == "__main__":
     main()
