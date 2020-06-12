@@ -9,6 +9,10 @@ def solve_planning_problem_using_ASP(planning_problem,t_max):
     starting from the initial state in the planning problem, returns such a plan of minimal length.
     If no such plan exists of length at most t_max, returns None.
 
+    Finding a shortest plan is done by encoding the problem into ASP, calling clingo to find an
+    optimized answer set of the constructed logic program, and extracting a shortest plan from this
+    optimized answer set.
+
     NOTE: still needs to be implemented. Currently returns None for every input.
 
     Parameters:
