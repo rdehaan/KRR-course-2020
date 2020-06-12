@@ -48,7 +48,7 @@ Consider defaults of the following form: `P : C / C`, where both `P` and `C` are
 
 For example, the following specifies a PDFN default theory `(W,D)` (where logical conjunction is written as `&` and negation as `~`):
 ```
-W = p & q
+W = { p, q }
 D = {
   q : r / r,
   p & r : ~s & q / ~s & q
