@@ -24,4 +24,4 @@ def solve_planning_problem_using_ASP(planning_problem,t_max):
         a shortest plan for planning_problem (if some plan of length at most t_max exists),
         and None otherwise.
     """
-    return None;
+    return None
