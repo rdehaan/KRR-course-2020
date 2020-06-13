@@ -98,13 +98,36 @@ n { item(1..u) } m.
 
 In this assignment, you will show that disjunction in the head of rules is a 'true' language extension for basic answer set programming. In other words, you will show that answer set programs with disjunction in the head of rules (e.g., with rules of the form `a ; b :- c.`) are more powerful than answer set programs without disjunction in the head of rules.
 
+You will do so by showing how to encode the problem SAT-UNSAT
+into the problem of finding an answer set of a program with disjunction in the head of rules.
+In the problem SAT-UNSAT, the input that you are given are
+two propositional CNF formulas &varphi;<sub>1</sub>
+and &varphi;<sub>2</sub>. The task is to decide if it is both
+true that (1) &varphi;<sub>1</sub> is satisfiable
+and &varphi;<sub>2</sub> is unsatisfiable.
+
 *Assignment:*
-Give an example of a problem that (a) can be encoded effectively as the problem of finding an answer set of a program with disjunction in the head of rules, but that (b) cannot be encoded effectively as the problem of finding  an answer set of a program without disjunction in the head of rules.
+Show how the following problem SAT-UNSAT can be encoded effectively as the problem of finding an answer set of a program with disjunction in the head of rules.
+That is, describe how&mdash;given any two propositional CNF
+formulas &varphi;<sub>1</sub>, &varphi;<sub>2</sub>&mdash;one
+can effectively construct a logic program *P*
+with disjunction in the head of rules, so that *P* has at
+least one answer set if and only if both
+(1) &varphi;<sub>1</sub> is satisfiable and
+(2) &varphi;<sub>2</sub> is unsatisfiable.
 
 *Remarks:*
-- Explain clearly (i) what the problem is, (ii) how you can encode the problem effectively into answer set programming with disjunction in the head of rules, and (iii) why this cannot be encoded effectively into answer set programming without disjunction in the head of rules.
+- Explain clearly how&mdash;for each &varphi;<sub>1</sub>
+and &varphi;<sub>2</sub>&mdash; the encoding into answer set programming with disjunction in the head of rules works.
+That is, (i) describe clearly what the resulting logic program
+looks like (as a function of &varphi;<sub>1</sub>
+and &varphi;<sub>2</sub>), (ii) explain why the resulting logic
+program has an answer set if and only if both
+&varphi;<sub>1</sub> is satisfiable and &varphi;<sub>2</sub>
+is unsatisfiable, and (iii) explain why this encoding
+can be done effectively.
 - With *effectively* we mean that there is, say, no exponential blow-up in the answer set program and that the encoding does not take exponential time to compute.
-- For this assignment, you may assume that the problem of deciding if a propositional logic formula is satisfiable (i.e., the SAT problem) takes exponential time. Note, however, that the SAT problem can be effectively encoded as an answer set program without disjunction in the heads of rules, so the SAT problem itself is not a good answer for this assignment.
+- The problem SAT-UNSAT cannot be encoded effectively as the problem of finding an answer set of a program without disjunction in the head of rules&mdash;under some widely believed complexity-theoretic assumptions. But you don't have to show this.
 
 *Hints:*
 - Search the web for an ASP modelling technique called *saturation*.
