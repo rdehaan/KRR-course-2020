@@ -113,8 +113,8 @@ formulas &varphi;<sub>1</sub>, &varphi;<sub>2</sub>&mdash;one
 can effectively construct a logic program *P*
 with disjunction in the head of rules, so that *P* has at
 least one answer set if and only if both
-(1) &varphi;<sub>1</sub> is satisfiable and
-(2) &varphi;<sub>2</sub> is unsatisfiable.
+(1) &varphi;<sub>1</sub> is **satisfiable** and
+(2) &varphi;<sub>2</sub> is **unsatisfiable**.
 
 *Remarks:*
 - Explain clearly how&mdash;for each &varphi;<sub>1</sub>
