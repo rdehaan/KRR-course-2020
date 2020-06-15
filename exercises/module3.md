@@ -34,3 +34,31 @@ if and only if &varphi; is satisfiable.
 - For a 3CNF formula with propositional variables *x<sub>1</sub>,...,x<sub>n</sub>*
 and clauses *c<sub>1</sub>,...,c<sub>m</sub>*, create a planning problem that uses
 propositions `X(1),...,X(n),Y(1),...,Y(n),C(1),...,C(m)`.
+
+---
+
+## Exercise 3.2: Modelling
+
+### Exercise 3.2.a
+
+Consider the following planning scenario.
+There are two drones on a 4x4 grid.
+Each location of the grid either contains (i) a warehouse, (ii) a delivery location, or (iii) nothing.
+Moreover, above each location on the grid can be at most one drone at the same time.
+The drones can move to adjacent locations on the grid.
+If the drone is above a warehouse, it can pick up a package.
+If the drone is above a delivery location, it can deliver a package (if it is carrying one).
+Each drone can carry at most one package at a time.
+All packages are identical.
+The warehouse has an unlimited supply of packages.
+The (initial) setup is as follows (where every cell contains nothing, unless specified otherwise):
+- Cell (0,0): a warehouse and above it a drone
+- Cell (0,1): above it a drone
+- Cell (1,2): a delivery location
+- Cell (2,1): a delivery location
+- Cell (3,3): a delivery location
+
+The goal is to have delivered exactly package at each delivery location.
+
+Show how to model this scenario in the PDDL planning language
+(as used in [[Russell, Norvig, 2016]](https://github.com/rdehaan/KRR-course#aima)).
