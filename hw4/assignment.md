@@ -12,53 +12,7 @@ The difficulty of the assignments is indicated with stars (&star;'s): the more s
 
 ---
 
-## Assignment 1 (&star;): knowledge base with only exponential models
-
-Some ALC knowledge bases have interpretations *I* that satisfy them
-with a small domain, and some only have satisfying interpretations
-whose domain is very large.
-In this exercise, you will construct knowledge bases that only
-have satisfying interpretations of exponential size.
-
-*Assignment:* Specify a family of ALC knowledge bases *KB<sub>1</sub>,KB<sub>2</sub>,...*,
-one for each positive integer *n &in; {1,2,3,...}*,
-such that for each *n* the knowledge base *KB<sub>n</sub>* it holds that
-there are only interpretations *I* that satisfy all statements in the knowledge base
-whose domain *&Delta;<sup>I</sup>* is of size at least *2<sup>n</sup>*
-(and moreover, there is at least one such interpretation *I*).
-Make sure that your knowledge bases *KB<sub>n</sub>*
-do not grow exponentially with *n*.
-
-*Remarks:*
-- It suffices to describe what *KB<sub>n</sub>* consists of for an arbitrary
-value *n &in; {1,2,3,...}*. You can do so by starting with
-specifying what *KB<sub>1</sub>* looks like. Then specify what *KB<sub>2</sub>* looks like, and *KB<sub>3</sub>*.
-Then indicate how this construction generalizes to arbitrary *KB<sub>n</sub>*.
-(If you want to directly start by specifying *KB<sub>n</sub>* for an arbitrary
-value of *n*, that is fine too of course.)
-
-*Hints:*
-- Use general concept inclusions and assertions to make a TBox and ABox
-that enforce that every interpretation contains a binary tree of depth *n*.
-Such a binary tree has size *&ge; 2<sup>n</sup>*.
-- Start with an assertion *x : A<sub>0</sub>* that will give the tree a root
-(namely, object *x*).
-- Specify that each object in concept *A<sub>0</sub>* must be related (by role *r*)
-to an object in concept *A<sub>1,1</sub>* and
-to an object in concept *A<sub>1,2</sub>*.
-- Specify that concepts *A<sub>1,1</sub>* and *A<sub>1,2</sub>* are subconcepts
-of *A<sub>1</sub>*.
-- Specify that each object in concept *A<sub>1</sub>* must be related (by role *r*)
-to an object in concept *A<sub>2,1</sub>* and
-to an object in concept *A<sub>2,2</sub>*.
-- Generalize this construction to arbitrary depth *n*.
-- Add further constraints that force that this really can only be satisfied
-by a tree&mdash;and not by a single object, or a path of objects.
-(This last step requires some insight.)
-
----
-
-## Assignment 2 (&star;): modeling a knowledge base in ALC
+## Assignment 1 (&star;): modeling a knowledge base in ALC
 
 In this assignment, you will use the description logic ALC to construct
 a knowledge base (in other words, an ontology together with some facts)
@@ -113,7 +67,7 @@ that I gave you, and make sure that you verify what follows from them
 
 ---
 
-## Assignment 3 (&star;): encoding 3SAT into ALC satisfiability
+## Assignment 2 (&star;): encoding 3SAT into ALC satisfiability
 
 The class 3CNF consists of all propositional logic formulas &varphi;
 in conjunctive normal form (CNF) where each clause of &varphi;
@@ -151,6 +105,52 @@ is satisfiable if and only if &varphi; is satisfiable.
 use concept names *A<sub>1</sub>,...,A<sub>n</sub>*
 to construct the complex concept *C<sub>&varphi;</sub>*.
 - Find a way to translate disjunction, conjunction and negation in propositional logic to operators in ALC. There is a solution that involves a mapping that (1) maps propositional variables to concepts, and (2) maps the logical operators in the propositional logic formula to operators in ALC, and combines these two to construct *C<sub>&varphi;</sub>*.
+
+---
+
+## Assignment 1 (&star;): knowledge base with only exponential models
+
+Some ALC knowledge bases have interpretations *I* that satisfy them
+with a small domain, and some only have satisfying interpretations
+whose domain is very large.
+In this exercise, you will construct knowledge bases that only
+have satisfying interpretations of exponential size.
+
+*Assignment:* Specify a family of ALC knowledge bases *KB<sub>1</sub>,KB<sub>2</sub>,...*,
+one for each positive integer *n &in; {1,2,3,...}*,
+such that for each *n* the knowledge base *KB<sub>n</sub>* it holds that
+there are only interpretations *I* that satisfy all statements in the knowledge base
+whose domain *&Delta;<sup>I</sup>* is of size at least *2<sup>n</sup>*
+(and moreover, there is at least one such interpretation *I*).
+Make sure that your knowledge bases *KB<sub>n</sub>*
+do not grow exponentially with *n*.
+
+*Remarks:*
+- It suffices to describe what *KB<sub>n</sub>* consists of for an arbitrary
+value *n &in; {1,2,3,...}*. You can do so by starting with
+specifying what *KB<sub>1</sub>* looks like. Then specify what *KB<sub>2</sub>* looks like, and *KB<sub>3</sub>*.
+Then indicate how this construction generalizes to arbitrary *KB<sub>n</sub>*.
+(If you want to directly start by specifying *KB<sub>n</sub>* for an arbitrary
+value of *n*, that is fine too of course.)
+
+*Hints:*
+- Use general concept inclusions and assertions to make a TBox and ABox
+that enforce that every interpretation contains a binary tree of depth *n*.
+Such a binary tree has size *&ge; 2<sup>n</sup>*.
+- Start with an assertion *x : A<sub>0</sub>* that will give the tree a root
+(namely, object *x*).
+- Specify that each object in concept *A<sub>0</sub>* must be related (by role *r*)
+to an object in concept *A<sub>1,1</sub>* and
+to an object in concept *A<sub>1,2</sub>*.
+- Specify that concepts *A<sub>1,1</sub>* and *A<sub>1,2</sub>* are subconcepts
+of *A<sub>1</sub>*.
+- Specify that each object in concept *A<sub>1</sub>* must be related (by role *r*)
+to an object in concept *A<sub>2,1</sub>* and
+to an object in concept *A<sub>2,2</sub>*.
+- Generalize this construction to arbitrary depth *n*.
+- Add further constraints that force that this really can only be satisfied
+by a tree&mdash;and not by a single object, or a path of objects.
+(This last step requires some insight.)
 
 ---
 
