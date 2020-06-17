@@ -140,8 +140,7 @@ Here are some Python notebooks that illustrate how to use various of the techniq
 - [Assignment 1](hw1/assignment.md) (programming)
 - [Assignment 2](hw2/assignment.md)
 - [Assignment 3](hw3/assignment.md) (programming)
-- Assignment 4
-  - *Coming..*
+- [Assignment 4](hw4/assignment.md)
 
 ---
 
