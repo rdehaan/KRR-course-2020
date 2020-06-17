@@ -1,6 +1,6 @@
 # Homework assignment 3
 
-In this assignment, you will use the problem solving paradigm of answer set programming to solve the problem of automated reasoning (in a particular setting).
+In this assignment, you will use the problem solving paradigm of answer set programming to solve the problem of automated planning (in a particular setting).
 
 You will finish a Python program ([asp_planner.py](asp_planner.py)) by
 implementing the core algorithm (in [asp_planner_core.py](asp_planner_core.py)) for the program.
