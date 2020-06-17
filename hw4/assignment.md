@@ -108,7 +108,7 @@ to construct the complex concept *C<sub>&varphi;</sub>*.
 
 ---
 
-## Assignment 1 (&star;): knowledge base with only exponential models
+## Assignment 3 (&star;): knowledge base with only exponential models
 
 Some ALC knowledge bases have interpretations *I* that satisfy them
 with a small domain, and some only have satisfying interpretations
