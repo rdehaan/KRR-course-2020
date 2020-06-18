@@ -179,20 +179,13 @@ Moreover, your implementation of `solve_planning_problem_using_ASP()` should sol
 1. using the clingo python package to find an optimal answer set for the encoding, and
 1. translating the output given by clingo into a solution (a shortest plan).
 
-<!--
 ---
 
-## Evaluation
+## Hints
 
-To get a passing grade for this homework assignment:
-- You must follow all instructions, and document your code clearly.
-- Your implementation of the solver `prop` must be able to solve sudoku inputs for `k=4` within a matter of seconds (on a typical modern laptop).
-- You must have implemented at least one of the solvers `sat`, `csp`, `asp` and `ilp` and your implementation must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
-
-To get full points for this homework assignment, in addition:
-- Your implementation of all of the solvers `sat`, `csp`, `asp` and `ilp` must be able to solve sudoku inputs for `k=5` within less than 30 seconds (on a typical modern laptop).
-
-You may use solutions for similar problems that you find on the internet for inspiration.
-However, if you do so, you must give clear references, and you must clearly indicate what you did differently.
-It is definitely not allowed to submit a solution copied from the internet.
--->
+- Use facts to declare different time steps, e.g., `time(0).`, `time(1).`, `time(2).`, etc.
+- Use a binary predicate that encodes at each time step which statements are true. For the first time step, you can encode the initial state using facts&mdash;e.g., `state(0,rains(today)).`, `state(0,monday(today)).`, etc. For subsequent time steps, you will need to use rules that further define the predicate `state/2`.
+- Use a binary predicate that encodes which actions are available at each time step&mdash;e.g., use rules that define which statements `available(T,A)` hold. For example: `available(0,throw(ball))` could be true.
+- Ensure that at each time step, exactly one action is chosen&mdash;e.g., using something along the lines of `1 { chosen(T,A) : available(T,A) } 1 :- time(T).`
+- Use the choice of which actions are chosen (i.e., which atoms `chosen(T,A)` are true) in your rules that define the predicate `state/2`.
+- Add further constraints that ensure that the preconditions of chosen actions are true in the appropriate state.
