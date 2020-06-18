@@ -138,15 +138,13 @@ value of *n*, that is fine too of course.)
 that enforce that every interpretation contains a binary tree of depth *n*.
 Such a binary tree has size *&ge; 2<sup>n</sup>*.
 - Start with an assertion *x : A<sub>0</sub>* that will give the tree a root
-(namely, object *x*).
+(namely, object *x* in concept *A<sub>0</sub>*).
 - Specify that each object in concept *A<sub>0</sub>* must be related (by role *r*)
-to an object in concept *A<sub>1,1</sub>* and
-to an object in concept *A<sub>1,2</sub>*.
-- Specify that concepts *A<sub>1,1</sub>* and *A<sub>1,2</sub>* are subconcepts
-of *A<sub>1</sub>*.
+to an object in concept *B<sub>1,a</sub> &sqcap; A<sub>1</sub>* and
+to an object in concept *B<sub>1,b</sub> &sqcap; A<sub>1</sub>*.
 - Specify that each object in concept *A<sub>1</sub>* must be related (by role *r*)
-to an object in concept *A<sub>2,1</sub>* and
-to an object in concept *A<sub>2,2</sub>*.
+to an object in concept *B<sub>2,a</sub> &sqcap; A<sub>2</sub>* and
+to an object in concept *B<sub>2,b</sub> &sqcap; A<sub>2</sub>*.
 - Generalize this construction to arbitrary depth *n*.
 - Add further constraints that force that this really can only be satisfied
 by a tree&mdash;and not by a single object, or a path of objects.
