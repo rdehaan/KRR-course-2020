@@ -142,10 +142,13 @@ Such a binary tree has size *&ge; 2<sup>n</sup>*.
 - Specify that each object in concept *A<sub>0</sub>* must be related (by role *r*)
 to an object in concept *B<sub>1,a</sub> &sqcap; A<sub>1</sub>* and
 to an object in concept *B<sub>1,b</sub> &sqcap; A<sub>1</sub>*.
+Intuitively, this will be used (in combination with some other general concept inclusions
+that you will add) to enforce that the root of the tree will have two children.
 - Specify that each object in concept *A<sub>1</sub>* must be related (by role *r*)
 to an object in concept *B<sub>2,a</sub> &sqcap; A<sub>2</sub>* and
 to an object in concept *B<sub>2,b</sub> &sqcap; A<sub>2</sub>*.
-- Generalize this construction to arbitrary depth *n*.
+- Keep going (with *A<sub>2</sub>*, *A<sub>3</sub>*, etc),
+and generalize this construction to arbitrary depth *n*.
 - Add further constraints that force that this really can only be satisfied
 by a tree&mdash;and not by a single object, or a path of objects.
 (This last step requires some insight.)
