@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from copy import deepcopy
+
 from planning import PlanningProblem, Action, Expr, expr, associate
 import planning
 
@@ -48,7 +50,7 @@ def main():
         print("Solving planning problem using ASP encoding..")
         timer.start()
     with suppress_stdout_stderr():
-        planning_problem_copy = copy_planning_problem(planning_problem)
+        planning_problem_copy = deepcopy(planning_problem)
         plan = solve_planning_problem_using_ASP(planning_problem_copy,t_max)
     if verbose:
         timer.stop()
@@ -151,7 +153,7 @@ def verify_plan(planning_problem, plan):
     """
 
     # Make a copy of the problem
-    copy = copy_planning_problem(planning_problem)
+    copy = deepcopy(planning_problem)
     # Execute the actions on the copy
     try:
         for action in plan:
@@ -175,24 +177,6 @@ def pretty_repr_plan(plan):
     """
 
     return str(plan)
-
-
-def copy_planning_problem(planning_problem):
-    """
-    Make a copy of a planning problem.
-
-    Parameters:
-        planning_problem (PlanningProblem): A planning problem.
-
-    Returns:
-        (PlanningProblem): A copy of the given planning problem.
-    """
-
-    copy = PlanningProblem(
-        initial=planning_problem.initial,
-        goals=planning_problem.goals,
-        actions=planning_problem.actions)
-    return copy
 
 
 def pretty_repr_planning_problem(planning_problem):
