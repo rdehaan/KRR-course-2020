@@ -48,7 +48,8 @@ def main():
         print("Solving planning problem using ASP encoding..")
         timer.start()
     with suppress_stdout_stderr():
-        plan = solve_planning_problem_using_ASP(planning_problem,t_max)
+        planning_problem_copy = copy_planning_problem(planning_problem)
+        plan = solve_planning_problem_using_ASP(planning_problem_copy,t_max)
     if verbose:
         timer.stop()
 
