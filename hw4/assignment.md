@@ -198,6 +198,9 @@ to the same set in both interpretations.
 
 ## Evaluation
 
-Each of the first three assignments (1–3) is worth 3 points,
-and the assignment is worth 1 points,
-yielding a total of 10 points.
+You get 2.5 point for free.
+Each of the first three assignments (1–3) is worth 2.5 points,
+and the fourth assignment is worth 1 bonus points.
+This gives a total of 11 points that you can get.
+Your grade will be the minimum of 10 and the number of points that you get&mdash;in
+other words, your grade is the number of points that you get, with a maximum value of 10.
