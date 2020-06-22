@@ -29,16 +29,16 @@ are subcategories of *Country*
 - *Republic* and *ConstitutionalMonarchy* are disjoint
 - Every country is related by the relation *hasCapital* to some object in
 category *City*.
-- Every country only related by the relation *hasCapital* to objects in
+- Every country is related by the relation *hasCapital* to only objects in
 category *City*.
 - Every country and every city is related by the role *hasHead*
 to some person.
 - The categories *President*, *Monarch* and *Mayor* are subcategories
 of the category *Person*.
-- Everything in the category *ConstitutionalMonarchy* is only related
-by the role *hasHead* to things in *Monarch*.
-- Everything in the category *City* is only related
-by the role *hasHead* to things in *Mayor*.
+- Everything in the category *ConstitutionalMonarchy* is related
+by the role *hasHead* to only things in *Monarch*.
+- Everything in the category *City* is related
+by the role *hasHead* to only things in *Mayor*.
 - *'NL'* is a country, and is a constitutional monarchy.
 - *'NL'* has as head *'WillemAlexander'*.
 - *'NL'* has as capital *'Amsterdam'*.
