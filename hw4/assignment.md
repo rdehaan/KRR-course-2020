@@ -152,6 +152,10 @@ and generalize this construction to arbitrary depth *n*.
 - Add further constraints that force that this really can only be satisfied
 by a tree&mdash;and not by a single object, or a path of objects.
 (This last step requires some insight.)
+  - For this, ensure that if an object is in concept *B<sub>1,a</sub>*, all objects that it is related to (by role *r*) must also be in *B<sub>1,a</sub>*.
+  - Similarly for *B<sub>1,b</sub>*.
+  - Make sure that *B<sub>1,a</sub>* and *B<sub>1,b</sub>* are disjoint.
+  - Do the same for all *i &geq; 2* (i.e., for *B<sub>2,a</sub>, B<sub>2,b</sub>, B<sub>3,a</sub>, B<sub>3,b</sub>, ...*).
 
 ---
 
