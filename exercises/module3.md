@@ -89,8 +89,8 @@ if and only if for the 'double-goal' planning problem there exists a sequence of
 
 *Hints:*
 - Use additional statements such as `Achieved(Goal1)` and `Achieved(Goal2)` that are false in the initial state.
-- Add actions that make these statements true (under some conditions).
-- Specify the 'unified' goal *G* using these statements.
+- Add actions that can be used to make these statements true (under the right conditions).
+- Specify the 'unified' goal *G* using these statements `Achieved(Goal1)` and `Achieved(Goal2)`.
 
 ### Exercise 3.3.b
 
