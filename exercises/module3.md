@@ -62,3 +62,56 @@ The goal is to have delivered exactly package at each delivery location.
 
 Show how to model this scenario in the PDDL planning language
 (as used in [[Russell, Norvig, 2016]](https://github.com/rdehaan/KRR-course#aima)).
+
+---
+
+## Exercise 3.3: Planning with two (or more) goals
+
+### Exercise 3.3.a
+
+Consider the following general variant of the classical planning setup.
+You have an initial state *I*, and a set *A* of actions (each deterministic, with a precondition and an effect),
+specified in the PDDL planning language (as used in [[Russell, Norvig, 2016]](https://github.com/rdehaan/KRR-course#aima)).
+In addition to this, you get two goals *G<sub>1</sub>* and *G<sub>2</sub>*, both consisting of a set of statements.
+In other words, the only difference with the typical classical planning setup is that instead of a single *G* specifying
+the goals, you have two: *G<sub>1</sub>* and *G<sub>2</sub>*.
+The task in this setting is to find a sequence of actions such that for both *G<sub>1</sub>* and *G<sub>2</sub>*
+it holds that they achieved at some point. In other words, if you apply the sequence of actions to the initial state,
+you get a resulting sequence of states, and in (at least) one of these states *G<sub>1</sub>* is achieved,
+and in (at least) one of these states *G<sub>2</sub>* is achieved.
+
+Show how you can model this scenario with two goal specifications, *G<sub>1</sub>* and *G<sub>2</sub>*,
+in the classical setting with only one goal specification *G*.
+In other words, describe how to make changes to *I*, *A*, *G<sub>1</sub>* and *G<sub>2</sub>*,
+so that you get a classical planning problem, for which there exists a plan (that achieves *G*)
+if and only if for the 'double-goal' planning problem there exists a sequence of actions that achieves
+*G<sub>1</sub>* and *G<sub>2</sub>* (not necessarily at the same time, and in any order).
+
+*Hints:*
+- Use additional statements such as `Achieved(Goal1)` and `Achieved(Goal2)` that are false in the initial state.
+- Add actions that make these statements true (under some conditions).
+- Specify the 'unified' goal *G* using these statements.
+
+### Exercise 3.3.b
+
+Consider the same question as in Exercise 3.3.a, with the difference that *G<sub>1</sub>*
+must be achieved not later than *G<sub>2</sub>*.
+In other words, the modified planning setup concerns the task of finding a sequence of
+actions such that:
+- if you apply the sequence of actions to the initial state,
+you get a resulting sequence of states *s<sub>0</sub>,...,s<sub>m</sub>*,
+- there is a state *s<sub>i</sub>* in this sequence *s<sub>0</sub>,...,s<sub>m</sub>*
+in which *G<sub>1</sub>* is achieved, and
+- there is a state *s<sub>j</sub>* *s<sub>0</sub>,...,s<sub>m</sub>*
+with *i &le; j* in which *G<sub>2</sub>* is achieved.
+
+Show how you can model this scenario with two goal specifications,
+*G<sub>1</sub>* and *G<sub>2</sub>*,
+in the classical setting with only one goal specification *G*.
+
+### Exercise 3.3.c
+
+Consider the questions of Exercises 3.3.a and 3.3.b,
+but then generalized to more than two goals: *G<sub>1</sub>, ..., G<sub>k</sub>*.
+Show how to answer the questions of Exercises 3.3.a and 3.3.b
+for an arbitrary number *k* of goal specifications.
