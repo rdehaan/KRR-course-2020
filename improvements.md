@@ -6,3 +6,6 @@ The following things are to be improved (either for the remainder of the course,
 - [ ] Setting up autotests so that they give more feedback on what goes right/wrong
 - [ ] Use an ILP solver that works (well, or at all) with the Codegrade autotest environment (e.g., [GLPK](https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit)?)
 - [ ] Add clearer (high-level, intuitive) explanations for the theoretical homework assignments, to make sure that it is clear what the task of the assignments is
+- [ ] Cover less topics in four weeks
+- [ ] Have less homework assignments / deadlines
+- [ ] Provide resources to engage with the material that are accessible also for those without much background knowledge on logic, logic programming, etc.
