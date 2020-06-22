@@ -102,7 +102,7 @@ has a solution&mdash;and if *I* has a solution, it outputs a solution for *I*.
 
 The class 2CNF consists of all propositional logic formulas &varphi;
 in conjunctive normal form (CNF) where each clause of &varphi;
-contains at most three literals.
+contains at most two literals.
 The problem MAX2SAT is the following problem.
 You are given as input a propositional logic formula &varphi; in 2CNF.
 The task is to find a truth assignment &alpha; to the variables in &varphi;
