@@ -149,8 +149,7 @@ Here are some Python notebooks that illustrate how to use various of the techniq
 - [Exercise questions related to *problem solving and search*](exercises/module1.md)
 - [Exercise questions related to *non-monotonic reasoning and answer set programming*](exercises/module2.md)
 - [Exercise questions related to *automated planning*](exercises/module3.md)
-- Exercise questions related to *description logics and OWL*
-  - *Coming..*
+- [Exercise questions related to *description logics and OWL*](exercises/module4.md)
 
 ---
 
