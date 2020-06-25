@@ -11,3 +11,4 @@ The following things are to be improved (either for the remainder of the course,
 - [ ] Provide resources to engage with the material that are accessible also for those without much background knowledge on logic, logic programming, etc.
 - [ ] Make sure that the programming assignments are set up in such a way that when you solve part of the problem, part of the implementation works.
 - [ ] Set up the programming assignments (in particular, hw3) in such a way that there are more tangible intermediate steps to solve
+- [ ] Have exercises with solutions available to practice with the material
