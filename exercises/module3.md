@@ -102,7 +102,7 @@ actions such that:
 you get a resulting sequence of states *s<sub>0</sub>,...,s<sub>m</sub>*,
 - there is a state *s<sub>i</sub>* in this sequence *s<sub>0</sub>,...,s<sub>m</sub>*
 in which *G<sub>1</sub>* is achieved, and
-- there is a state *s<sub>j</sub>* *s<sub>0</sub>,...,s<sub>m</sub>*
+- there is a state *s<sub>j</sub>* in this sequence *s<sub>0</sub>,...,s<sub>m</sub>*
 with *i &le; j* in which *G<sub>2</sub>* is achieved.
 
 Show how you can model this scenario with two goal specifications,
