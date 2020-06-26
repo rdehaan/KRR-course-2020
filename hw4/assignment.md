@@ -190,7 +190,9 @@ by *r<sup>I</sup>* (i.e., such that
 *Hints:*
 - Find two (particular) interpretations *I<sub>1</sub>* and *I<sub>2</sub>*
 such that (1) the OWL DL expression *(&ge; 2 r)* gets assigned to different sets
-in these interpretations, and such that (2) every ALC concept *C* gets assigned
+*S<sub>1</sub>* and *S<sub>2</sub>*
+in these interpretations, and such that (2) every ALC concept *C* that gets assigned
+to either *S<sub>1</sub>* or *S<sub>2</sub>*, gets assigned
 to the same set in both interpretations.
 - Prove this second property by induction (on the structure of concepts *C*).
 
